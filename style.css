@@ -1,0 +1,151 @@
+/* ------------ GLOBAL STYLES ------------ */
+@import url('');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f4f8fb;
+    color: #333;
+}
+
+header {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #0077b6;
+}
+
+.hero {
+    height: 95vh;
+    background: url('steep-karst-cliffs-of-el-nido-in-palawan.avif')
+        center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.button {
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #0077b6;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.button:hover {
+    background: #0096c7;
+}
+
+/* ------------ SECTIONS ------------ */
+.section {
+    width: 85%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: .3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* ------------ CONTACT ------------ */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* ------------ FOOTER ------------ */
+footer {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+/* ------------ RESPONSIVE ------------ */
+@media(max-width: 768px) {
+    .hero h1 { font-size: 2.8rem; }
+    .flex { justify-content: center; }
+}
